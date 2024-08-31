@@ -67,7 +67,7 @@ BINARY : '0b' [01]+ ( '_' [01]+ )*;
 INTEGER : D+ ( '_' D+ )*;
 FLOAT : D+ '.' D+ EXPONENT?;
 
-SINGLE_LINE_STRING : '"' ( ESCAPE | '\\"' | ~[\\"] )* '"';
+SINGLE_LINE_STRING : '"' ( ESCAPE | '\\' . | ~[\\"] )* '"';
 MULTI_LINE_STRING : '"""' .*? '"""';
 SINGLE_LINE_CHARLIST : '\'' ( ESCAPE | '\\\'' | ~[\\'] )* '\'';
 MULTI_LINE_CHARLIST : '\'\'\'' .*? '\'\'\'';

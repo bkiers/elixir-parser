@@ -9,7 +9,7 @@ parse
  ;
 
 block
- : eoe? expression ( eoe expression )* eoe?
+ : eoe* expression ( eoe+ expression )* eoe*
  ;
 
 eoe

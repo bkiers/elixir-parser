@@ -1,3 +1,6 @@
+*.interp
+.antlr/
+
 # Compiled class file
 *.class
 
